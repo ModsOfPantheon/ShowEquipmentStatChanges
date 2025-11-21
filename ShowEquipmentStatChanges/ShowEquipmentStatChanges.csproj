@@ -546,13 +546,9 @@
         </Reference>
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Hooks\" />
-    </ItemGroup>
-
     <Target Name="PostBuild" AfterTargets="PostBuildEvent">
         <ItemGroup>
-            <FilesToCopy Include="$(TargetDir)ModTemplate.dll" />
+            <FilesToCopy Include="$(TargetDir)ShowEquipmentStatChanges.dll" />
         </ItemGroup>
         <Copy SourceFiles="@(FilesToCopy)" DestinationFolder="$(GamePath)/Mods" />
     </Target>
