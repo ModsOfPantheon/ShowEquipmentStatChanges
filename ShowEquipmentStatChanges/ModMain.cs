@@ -1,6 +1,6 @@
 ﻿using MelonLoader;
 
-namespace ModTemplate;
+namespace ShowEquipmentStatChanges;
 
 public class ModMain : MelonMod
 {

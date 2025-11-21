@@ -546,6 +546,10 @@
         </Reference>
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Hooks\" />
+    </ItemGroup>
+
     <Target Name="PostBuild" AfterTargets="PostBuildEvent">
         <ItemGroup>
             <FilesToCopy Include="$(TargetDir)ModTemplate.dll" />
