@@ -53,12 +53,6 @@ public static class StatLabelBuilder
             stringBuilder.Append(GetStatLabel(key, statModifier));
         }
         
-        // Weapon damage is not a "stat", so calculate difference for weapon damage
-        if (item.IsWeapon())
-        {
-            MelonLogger.Msg("It's a weapon");
-        }
-        
         return stringBuilder.ToString();
     }
 
